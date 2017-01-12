@@ -1,0 +1,143 @@
+.col-item{
+      width: 100%;
+      height: 170px;
+       border:0.5px solid #ddd;
+      background-color: #fff;
+      padding: 1%;
+      margin-top: 1%;
+     
+
+    }
+    .containerr{
+ 
+  margin-right: auto;
+  margin-left: auto;
+    }
+
+    .col-item:hover {
+       border:2px solid #3b7ab8;
+     
+
+    }
+    .col-two-a a{
+      color: black;
+      font-family: "微软雅黑";
+    }
+
+    .col-two-a a:hover{
+      
+      text-decoration: underline;
+
+    }
+    .col-three-a a:hover {
+         text-decoration: underline;       
+
+    }
+    
+  .order_tab_list_sub{
+  background-color:#f4f8fb;
+  list-style-type: none;
+  font-size: 20px;
+  border:1px solid #fff;
+  height:50px;
+  line-height: 50px;
+  
+  }
+  
+  .order_tab_list_sub a{
+     font-size: 20px;
+     font-family: "微软雅黑";
+     color: #3b7ab8;
+  
+  }
+ .order_tab_list_sub a:visited{
+     
+    
+ 
+ } 
+  
+    .order_tab_list_sub a:hover{
+    
+     color:red;
+      font-family: "微软雅黑";
+    
+    }
+    
+    .updatepwd{
+    background-color:#fff;
+    display: none;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "微软雅黑";
+	padding:10px;
+	width:100%;
+	height:400px;
+	
+	
+	}
+	
+	.updatepwd input{
+	  height: 40px;
+	  width:250px;
+	
+	}
+	
+	.updatepwd >div {
+	
+	margin-left:25%;
+	margin-top: 20px;
+	
+	
+	}
+	
+	
+	.userinfo{
+	
+	
+	display: none;
+	width: 100%;
+	height: 800px;
+	background-color: #fff;
+	padding-top: 20px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+	.userinfo > div{
+	
+	margin-top: 30px;
+	margin-left: 40%;
+	
+	}
+	
+	.formchange{
+	
+	display: none;
+	width: 100%;
+	height: 800px;
+	background-color: #fff;
+	padding-top: 20px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	
+	}
+	
+
+	
+	.userform>div{
+	margin-top: 30px;
+	margin-left: 40%;
+	}
+	
+	
+	
+	
+    

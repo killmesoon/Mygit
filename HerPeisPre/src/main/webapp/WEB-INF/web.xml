@@ -1,0 +1,174 @@
+ <web-app xmlns="http://java.sun.com/xml/ns/javaee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+                         version="3.0">
+  <display-name>Archetype Created Web Application</display-name>
+
+  
+   <servlet>
+  <servlet-name>UserServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.UserServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>UserRegServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.UserRegServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  <servlet-name>UserPreinfoServlet</servlet-name>
+   <servlet-class>com.bjbr.servlet.UserPreinfoServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  <servlet-name>UserOrderServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.UserOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>TestServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.TestServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+  <servlet-name>ItemServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.ItemServlet</servlet-class>
+   <load-on-startup>1</load-on-startup> 
+  </servlet>
+  
+     <servlet>
+  <servlet-name>DetailInfoServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.DetailInfoServlet</servlet-class>
+   
+  </servlet>
+  
+     <servlet>
+  <servlet-name>DateChooseServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.DateChooseServlet</servlet-class>
+    
+  </servlet>
+  
+       <servlet>
+  <servlet-name>OrderCountServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.OrderCountServlet</servlet-class>
+    
+  </servlet>
+  
+     <servlet>
+  <servlet-name>MyOrderServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.MyOrderServlet</servlet-class>
+    
+  </servlet>
+  
+    <servlet>
+  <servlet-name>ExistSevlet</servlet-name>
+  <servlet-class> com.bjbr.servlet.ExistSevlet</servlet-class>
+    
+  </servlet>
+  
+   <servlet>
+  <servlet-name>UpdatePwdServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.UpdatePwdServlet</servlet-class>
+    
+  </servlet>
+  
+  
+  <servlet>
+  <servlet-name>UserFormChangeServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.UserFormChangeServlet</servlet-class>
+    
+  </servlet>
+  
+    <servlet>
+  <servlet-name>ShowUpdatedInfoServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.ShowUpdatedInfoServlet</servlet-class>
+    
+  </servlet>
+  
+
+
+  
+  <!-- 映射 -->
+  
+  
+  <servlet-mapping>
+  <servlet-name>UserServlet</servlet-name>
+  <url-pattern>/userservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>UserRegServlet</servlet-name>
+  <url-pattern>/regservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>UserPreinfoServlet</servlet-name>
+  <url-pattern>/preservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>UserOrderServlet</servlet-name>
+  <url-pattern>/userorder</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/test</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>ItemServlet</servlet-name>
+    <url-pattern>/item</url-pattern>  
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>DetailInfoServlet</servlet-name>
+    <url-pattern>/detailinfo</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>DateChooseServlet</servlet-name>
+    <url-pattern>/date</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>OrderCountServlet</servlet-name>
+    <url-pattern>/orderDate</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>MyOrderServlet</servlet-name>
+    <url-pattern>/myorder</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>ExistSevlet</servlet-name>
+    <url-pattern>/exist</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>UpdatePwdServlet</servlet-name>
+    <url-pattern>/updatepwd</url-pattern>  
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name>UserFormChangeServlet</servlet-name>
+    <url-pattern>/userinfochange</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>ShowUpdatedInfoServlet</servlet-name>
+    <url-pattern>/showupdatedinfo</url-pattern>  
+  </servlet-mapping>
+  
+  
+
+  
+</web-app>
