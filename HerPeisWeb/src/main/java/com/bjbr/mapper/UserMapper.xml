@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   <mapper namespace="com.bjbr.mapper.UserMapper">
+   
+   <select id="findUserById" parameterType="com.bjbr.pojo.QueryExample" resultType="com.bjbr.pojo.UserCustom">
+        select * from PeisPatientRelation where key_id=#{userCustom.key_id}
+        
+   </select>
+   
+   </mapper> 
+    
