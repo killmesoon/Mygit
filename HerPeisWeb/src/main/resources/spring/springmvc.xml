@@ -35,13 +35,11 @@
 	</bean>
              
              
-             
+            
              
              	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
 	            <mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
-             
-             
-             
-             
-                        
+                  <mvc:resources location="/WEB-INF/ima/" mapping="/ima/**"/>
+               <mvc:resources location="/WEB-INF/assets/" mapping="/assets/**"/>
+                     
                         </beans>
