@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 
 import com.bjbr.mapper.ItemMapper;
 import com.bjbr.pojo.ExamSuit;
+import com.bjbr.pojo.ExamSuitCustom;
+import com.bjbr.pojo.QueryExample;
 import com.bjbr.service.ItemService;
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -22,6 +24,19 @@ public class ItemServiceImpl implements ItemService {
 		
 		return list;
 	}
+
+
+	@Override
+	public List<ExamSuitCustom> queryItemDeatilList(QueryExample queryExample) throws Exception {
+		
+		
+		
+		
+		return itemMapper.queryItemDeatilList(queryExample);
+	}
+	
+	
+	
 
 	
 }

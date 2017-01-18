@@ -10,6 +10,7 @@
 	border: 1px solid #eee;
 	padding-top: 10px;
 	cursor: pointer;
+	
 
 
 }
@@ -23,7 +24,7 @@
 
 .bottom{
 	width: 100%;
-	height: 200px;
+	height: auto;
 
 }
 .bottom>div{
@@ -33,6 +34,7 @@
 	border: 1px solid #eee;
 	padding-top: 10px;
 	cursor: pointer;
+	
 
 }
 

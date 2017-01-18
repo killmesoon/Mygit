@@ -12,6 +12,11 @@
    <result property="Price" column="Price"  javaType="double" />
    </resultMap>
    
+   <resultMap type="com.bjbr.pojo.ExamSuitCustom" id="queryItemDetailListRM">
+      <result property="itemName" column="ExamFeeItem_Name"/>
+       <result property="suitPrice" column="SuitePrice" javaType="double"/>
+   </resultMap>
+   
     <select id="queryItemList" resultMap="queryItemListRM" >
     
       select ID_ExamSuite,
@@ -21,6 +26,26 @@
       
        from BasExamSuite
     </select>
+    
+    
+    <select id="queryItemDeatilList" resultMap="queryItemDetailListRM" parameterType="com.bjbr.pojo.QueryExample"> 
+      <!-- 
+      SELECT ID_ExamFeeItem FROM BasExamSuiteDetail where ID_ExamSuite=#{examSuitCustom.ID_ExamSuite}
+       -->
+       
+       SELECT ExamFeeItem_Name,SuitePrice 
+     from BasExamFeeItem where ID_ExamFeeItem in
+    (SELECT ID_ExamFeeItem FROM BasExamSuiteDetail where BasExamSuiteDetail.ID_ExamSuite=#{examSuitCustom.ID_ExamSuite})
+    </select>
+    
+    
+   <!--  
+
+SELECT ExamFeeItem_Name,SuitePrice 
+ from BasExamFeeItem where ID_ExamFeeItem in
+ (SELECT ID_ExamFeeItem FROM BasExamSuiteDetail where BasExamSuiteDetail.ID_ExamSuite=223); -->
+    
+    
       
    </mapper> 
     

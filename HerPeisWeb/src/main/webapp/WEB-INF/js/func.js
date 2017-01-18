@@ -12,12 +12,11 @@ $(function(){
 
 
 //预约
-  $('#tj-pre').click(function(){
- 
-   location.href="pre.html" 
-
- }); 
-
+//  $('#tj-pre').click(function(){
+// 
+//	 alert("11111");
+//
+// }); 
 
 
 

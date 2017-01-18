@@ -6,6 +6,9 @@ public class QueryExample {
 	//用户扩展类
 	private UserCustom userCustom;
 	
+	//项目扩展类
+	private ExamSuitCustom   examSuitCustom;
+	
 	
 	
 	
@@ -23,5 +26,13 @@ public class QueryExample {
 	public void setUserCustom(UserCustom userCustom) {
 		this.userCustom = userCustom;
 	}
-
+	public ExamSuitCustom getExamSuitCustom() {
+		return examSuitCustom;
+	}
+	public void setExamSuitCustom(ExamSuitCustom examSuitCustom) {
+		this.examSuitCustom = examSuitCustom;
+	}
+	
+	
+      
 }

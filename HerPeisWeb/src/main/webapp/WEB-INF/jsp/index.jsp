@@ -3,10 +3,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
 <title>首页</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
+
 <!-- 新 Bootstrap 核心 CSS 文件 -->
 <link rel="stylesheet" href="./css/bootstrap.css">
 
@@ -51,28 +50,28 @@
  
 </div>
 
-   <div class="container"  style="background-color: #fff">
-   	<div class="top">
-   		<div id="tj-helper"><img src="./ima/loudspeaker.png">
+   <div class="container"  style="background-color: #fff;width:100%;">
+   	<div class="top" >
+   		<div id="tj-helper" style="height:150px;"><img src="./ima/loudspeaker1.png">
            <p>操作指南</p>
    		</div>
 
 
-         <div id="tj-pre"><img src="./ima/phone.png">
+         <div id="tj-pres" ><img src="./ima/phone1.png">
              <p>体检预约</p>
          </div>
    	</div>
      
 
      <div class="bottom">
-     	  <div id="tj-report"><img src="./ima/pencil.png">
+     	  <div id="tj-report" style="height:150px;"><img src="./ima/pencil.png">
              <p>体检报告</p>
    		  </div>
-          <div id="tj-login"><img src="./ima/schedule.png">
+          <div id="tj-login" style="height:150px;"><img src="./ima/schedule.png">
              <p>登录注册</p>
           </div>
 
-         <div id="tj-question"><img src="./ima/notebook.png">	
+         <div id="tj-question" style="height:150px;"><img src="./ima/notebook.png">	
              <p>健康评估</p>
          </div>
 
@@ -96,7 +95,7 @@
 
 
   <!--分割线 -->
-   <div class="container"  style="text-align: center;margin-top: 10px" >
+   <div class="container"  style="text-align: center;margin-top: 10px;" >
    	
      <img  src="./ima/line2.jpg" style="width: 100%">
 
@@ -111,6 +110,16 @@
        <p ><h4 >北京标软体检中心</h4></p>
         <p style="color: #3b7ab8">知名软件公司</p>
    </div>
+   
+   
+   <script type="text/javascript">
+
+   $('#tj-pres').click(function(){
+  	  
+  	  location.href="itemlist";
+   });
+   
+   </script>
 
 </body>
 </html>

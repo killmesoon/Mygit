@@ -3,6 +3,8 @@ package com.bjbr.service;
 import java.util.List;
 
 import com.bjbr.pojo.ExamSuit;
+import com.bjbr.pojo.ExamSuitCustom;
+import com.bjbr.pojo.QueryExample;
 
 
 public interface ItemService {
@@ -12,5 +14,12 @@ public interface ItemService {
 	 * @throws Exception
 	 */
 	public List<ExamSuit> queryItemList() throws Exception;
+	/**
+	 * 传入综合查询条件
+	 * @param queryExample
+	 * @return
+	 * @throws Exception
+	 */
+	public List<ExamSuitCustom> queryItemDeatilList(QueryExample queryExample)throws Exception;
 
 }
