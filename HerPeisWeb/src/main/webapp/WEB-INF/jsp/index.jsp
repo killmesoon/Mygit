@@ -50,29 +50,29 @@
  
 </div>
 
-   <div class="container"  style="background-color: #fff;width:100%;">
-   	<div class="top" >
-   		<div id="tj-helper" style="height:150px;"><img src="./ima/loudspeaker1.png">
-           <p>操作指南</p>
+  <div class="container"  style="background-color: #fff;width:100%" >
+   	<div class="top">
+   		<div id="tj-helper" style="height:300px;padding-top:60px;"><img src="./ima/loudspeaker1.png">
+           <p style="font-size:30px">操作指南</p>
    		</div>
 
 
-         <div id="tj-pres" ><img src="./ima/phone1.png">
-             <p>体检预约</p>
+         <div id="tj-pres" style="height:300px;padding-top:60px;"><img src="./ima/phone1.png">
+             <p style="font-size:30px">体检预约</p>
          </div>
    	</div>
      
 
      <div class="bottom">
-     	  <div id="tj-report" style="height:150px;"><img src="./ima/pencil.png">
-             <p>体检报告</p>
+     	  <div id="tj-report" style="height:300px;padding-top:60px;"><img src="./ima/pencil1.png">
+             <p style="font-size:30px">体检报告</p>
    		  </div>
-          <div id="tj-login" style="height:150px;"><img src="./ima/schedule.png">
-             <p>登录注册</p>
+          <div id="tj-login" style="height:300px;padding-top:60px;"><img src="./ima/schedule1.png">
+             <p style="font-size:30px">登录注册</p>
           </div>
 
-         <div id="tj-question" style="height:150px;"><img src="./ima/notebook.png">	
-             <p>健康评估</p>
+         <div id="tj-question" style="height:300px;padding-top:60px;"><img src="./ima/notebook1.png">	
+             <p style="font-size:30px">健康评估</p>
          </div>
 
      </div>
@@ -82,12 +82,12 @@
        
      
    </div>
-  <!-- 
+   <!-- 
    这是介绍内容部分
   -->
-   <div class="container" style="background-color: #fff;margin-top: 10px">
-   <div style="text-align: center;"><h3>公司简介</h3></div>
-   <p>&nbsp&nbsp北京标软信息技术有限公司是长期专注于环保领域。本公司倡导“专业、务实、高效、创新”的企业精神，具有良好的内部机制。优良的工作环境以及良好的激励机制，吸引了一批高素质、高水平、高效率的人才。拥有完善的技术研发力量和成熟的售后服务团队。</p>
+   <div class="container" style="background-color: #fff;margin-top: 10px;width:100%;">
+   <div style="text-align: center;"><h1 style="font-size:38px;">公司简介</h1></div>
+   <p style="font-size:30px;">&nbsp&nbsp北京标软信息技术有限公司是长期专注于环保领域。本公司倡导“专业、务实、高效、创新”的企业精神，具有良好的内部机制。优良的工作环境以及良好的激励机制，吸引了一批高素质、高水平、高效率的人才。拥有完善的技术研发力量和成熟的售后服务团队。北京标软是专业体检软件供应商，我们专注打造高智能体检管理软件。标软经过十余年的发展，具备成熟的体检软件开发技术、强大的开发团队、丰富的实施经验以及全方位的解决方案，为您提供专业、全面的技术服务。</p>
    	    
   
    </div>
@@ -95,7 +95,7 @@
 
 
   <!--分割线 -->
-   <div class="container"  style="text-align: center;margin-top: 10px;" >
+   <div class="container"  style="text-align: center;margin-top: 40px;width:100%;" >
    	
      <img  src="./ima/line2.jpg" style="width: 100%">
 
@@ -103,7 +103,7 @@
    
 
 <!-- Logo和名称 -->
-   <div class="container" style="margin-top: 5px;text-align: center; font-family: '微软雅黑';background-color: #fff">
+   <div class="container" style="margin-top: 5px;text-align: center; font-family: '微软雅黑';background-color: #fff;width:100%;">
    	
     <img src="./ima/logo2.png" >
 
