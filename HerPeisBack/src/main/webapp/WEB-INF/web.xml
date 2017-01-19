@@ -1,0 +1,70 @@
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  <servlet-name>TestServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.TestServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+  <servlet-name>AjaxServlet</servlet-name>
+  <servlet-class>com.bjbr.servlet.AjaxServlet</servlet-class>
+  </servlet>
+
+<servlet>
+<servlet-name>DateServlet</servlet-name>
+<servlet-class>com.bjbr.servlet.DateServlet</servlet-class>
+</servlet>
+
+<servlet>
+<servlet-name>GodateServlet</servlet-name>
+<servlet-class>com.bjbr.servlet.GodateServlet</servlet-class>
+</servlet>
+
+<servlet>
+<servlet-name>AjaxServletTwo</servlet-name>
+<servlet-class>com.bjbr.servlet.AjaxServletTwo</servlet-class>
+</servlet>
+
+  
+  
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>  
+  
+  
+  <servlet-mapping>
+  <servlet-name>TestServlet</servlet-name>
+  <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name>AjaxServlet</servlet-name>
+  <url-pattern>/ajax</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>DateServlet</servlet-name>
+  <url-pattern>/date</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>GodateServlet</servlet-name>
+  <url-pattern>/godate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>AjaxServletTwo</servlet-name>
+  <url-pattern>/ajaxtwo</url-pattern>
+  </servlet-mapping>
+</web-app>

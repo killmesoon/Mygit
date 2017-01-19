@@ -1,0 +1,25 @@
+body {
+	background:#2E363F;
+}
+
+#header {
+	background-color: #1f262d;
+   margin-top:10px;
+}
+
+@media (max-width: 480px) {
+	#sidebar > a {
+		background:#27a9e3;
+		
+	}
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	#sidebar > ul ul:before {
+	}
+	#sidebar > ul ul:after {
+		border-right: 6px solid #222222;
+    }
+
+}
