@@ -9,15 +9,15 @@
 
 <title>预约</title>
 
-<link href="./css/item.css" rel="stylesheet">
-<script type="text/javascript" src="./js/jquery-3.1.1.js"></script>
+<link href="css/item.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 
 </head>
 <body >
-  
+  <h1>asdasdasdasdsadasdasdas</h1>
   
   <!-- foreach 获取数据库值 -->
-  <c:forEach items="${itemlist }" var="items" varStatus="status">
+  <c:forEach items="${list }" var="items" varStatus="status">
     <div id="item_${items.ID_ExamSuite }" class="item">
     
     	<div style="float: left;">

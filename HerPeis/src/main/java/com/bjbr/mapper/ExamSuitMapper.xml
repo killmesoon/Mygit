@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.bjbr.mapper.ExamSuitMapper" >
+    
+    <!-- 查询套餐列表的rm -->
+    <resultMap type="com.bjbr.pojo.ExamSuitCustom" id="showItemListRM">
+    <id property="examSuitId"  column="ID_ExamSuite"/>
+    <result property="examSuitName" column="ExamSuite_Name" />
+    <result property="price" column="Price" javaType="double"/>
+    <result property="sex" column="F_Male" javaType="boolean"/>
+    
+    </resultMap>
+    
+    <!-- 查询套餐详情RM -->
+
+     <resultMap type="com.bjbr.pojo.SuitDetailCustom" id="showSuitListRM">
+     <result property="examFeeItem_Name" column="ExamFeeItem_Name"/>
+     <result property="suitePrice" column="SuitePrice" javaType="double"/>
+     </resultMap>    
+   
+    
+    
+    <select id="showItemList" resultMap="showItemListRM">
+    select ID_ExamSuite,ExamSuite_Name,Price,F_Male from BasExamSuite 
+    </select>
+    
+    
+    <select id="showSuitList" resultMap="showSuitListRM" parameterType="com.bjbr.pojo.QueryVo">
+   SELECT ExamFeeItem_Name,SuitePrice 
+     from BasExamFeeItem where ID_ExamFeeItem in
+    (SELECT ID_ExamFeeItem FROM BasExamSuiteDetail where BasExamSuiteDetail.ID_ExamSuite=#{examSuitCustom.examSuitId})
+    </select>
+    
+    
+    <!-- 
+       SELECT ExamFeeItem_Name,SuitePrice 
+ from BasExamFeeItem where ID_ExamFeeItem in
+ (SELECT ID_ExamFeeItem FROM BasExamSuiteDetail where BasExamSuiteDetail.ID_ExamSuite in 
+ 
+ (select ID_ExamSuite from PeisPatient where PeisPatient.ID_Patient=#{examSuitCustom.examSuitId} )
+ )
+     -->
+      
+      <select id="findBaseItem"  resultMap="showItemListRM" parameterType="int">
+     select * from BasExamSuite where ID_ExamSuite =#{examSuitId}
+      </select>
+      
+    </mapper>

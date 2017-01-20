@@ -13,7 +13,7 @@ public interface ItemService {
 	 * @return
 	 * @throws Exception
 	 */
-	public List<ExamSuit> queryItemList() throws Exception;
+	public List<ExamSuitCustom> queryItemList() throws Exception;
 	/**
 	 * 传入综合查询条件
 	 * @param queryExample

@@ -18,11 +18,11 @@ public class ItemServiceImpl implements ItemService {
 	
 	
 	@Override
-	public List<ExamSuit> queryItemList() throws Exception {
-		List<ExamSuit> list = itemMapper.queryItemList();
+	public List<ExamSuitCustom> queryItemList() throws Exception {
+		List<ExamSuitCustom> lists = itemMapper.queryItemList();
 		
 		
-		return list;
+		return lists;
 	}
 
 

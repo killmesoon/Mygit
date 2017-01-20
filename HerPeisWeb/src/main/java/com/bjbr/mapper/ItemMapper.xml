@@ -4,11 +4,11 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
    <mapper namespace="com.bjbr.mapper.ItemMapper">
    
-   <resultMap type="com.bjbr.pojo.ExamSuit" id="queryItemListRM">
+   <resultMap type="com.bjbr.pojo.ExamSuitCustom" id="queryItemListRM">
    <id property="ID_ExamSuite" column="ID_ExamSuite" />
    
    <result property="ExamSuite_Name" column="ExamSuite_Name"/>
-   <result property="sex" column="F_Male" jdbcType="BIT" javaType="boolean" />
+   <result property="sex" column="F_Male"  javaType="boolean" />
    <result property="Price" column="Price"  javaType="double" />
    </resultMap>
    

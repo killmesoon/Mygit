@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*重置*/
+body{ margin:0;}
+span{ display:block}
+/* CSS Document */
+.blank3{ height:3px; clear:both; font-size:1px;overflow:hidden;}
+.blank6{ height:6px; font-size:1px; clear:both;overflow:hidden;}
+.blank8{ height:8px; font-size:1px; clear:both;overflow:hidden;}
+.blank10{ height:10px; font-size:1px; clear:both;overflow:hidden;}
+.blank15{ height:15px; font-size:1px; clear:both;overflow:hidden;}
+.blank20{ height:20px; font-size:1px; clear:both;overflow:hidden;}
+.blank30{ height:30px; font-size:1px; clear:both;overflow:hidden;}
+.blank35{ height:35px; font-size:1px; clear:both;overflow:hidden;}
+.blank50{ height:50px; font-size:1px; clear:both;overflow:hidden;}
+
+img{ display:block; border:none;}
+a{ text-decoration:none;display:block; font-size:14px}
+*{ color:#505050; font-size:12px;}
+.clearfix{ clear:both;}
+p{ margin:0; padding:0;}
+tr,td{ font-size:14px}
+dd{ margin:0;}
+.nav a:hover{ color:#d04747;}
+/*搜索*/
+.search{ background-image:url(../images/weizhi.jpg); width:1000px; height:40px; margin-left:auto; margin-right:auto}
+.Bottom {background-image:url(../images/weizhi.jpg); width:1000px; height:20px; margin-left:auto; margin-right:auto}
+.BottomText{ clear:both; margin:0 auto; width:1000px; color:#767676;padding:15px 0 20px 0; line-height:22px;}
+.main01-box{ width:1000px; margin-left:auto; margin-right:auto; margin-top:30px}
+/*小导航*/
+.nav{ float:left;border:solid 1px #dfdfdf; box-sizing:border-box; padding:1px 1px; background-color:#f9f9f9; height:1000px}
+.nav_title img{ position:absolute; top:13px; left:12px;}
+.nav_title{ width:190px; margin-left:auto; margin-right:auto; line-height:40px; font-family:'微软雅黑'; font-weight:bold; padding-left:25px; position:relative; border-bottom:solid 1px #e3e3e3; box-sizing:border-box;
+  background-image: -moz-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(255,255,255) 100%); color:#626262;
+  background-image: -webkit-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(255,255,255) 100%);margin-bottom:6px;}
+.nav .p{ width:180px;margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:28px;}
+.nav a{ display:block; text-align:center; line-height:32px; border-bottom:solid 1px #e8e8e8;}
+.nav a:hover{ color:#d04747;}
+/*位置展示*/
+.main_box{width:550px; float:left; margin-left:15px }
+.weizhi{ width:550px; float:left; border:solid 1px #dfdfdf; box-sizing:border-box; background-color:#f5f5f5;margin-bottom:30px;}
+.pct3{ float:left; margin-left:12px; margin-top:7px; width:50px; height:90px; margin-bottom:7px}
+.Introduc{ float:left; font-size:20px}
+.Introduc span{line-height:20px;  margin-left:20px; width:450px}
+.pct4{float:right;}
+/*体检套餐*/
+.login_box{ width:580px; margin-top:20px;}
+.login_box a{ font-size:14px; border:#CCC 1px solid; line-height:30px; width:80px; text-align:center; margin-left:10px }
+.login_box .login_box1{ float:left;}
+.login_box .login_box2{ float:right; border:none}
+.login_box .login_box3{ float:left;line-height:30px; width:90px;}
+/*套餐名称*/
+.menu a{ border:1px solid  #f3f3f3; float:left; width:100px; text-align:center; line-height:30px; margin-left:5px;}
+.menu .jiancha1 {
+	BACKGROUND-COLOR:#993; COLOR: #fff
+}
+.main-tcxq .jiancha1 {
+	BACKGROUND-COLOR:#993; COLOR: #fff
+} 
+.main-taocan{ margin-top:10px; background-color:#f6f6f6}
+.main-taocan a{ font-size:14px;line-height:30px; width:80px; text-align:center}
+.main-taocan .login_box1{ float:left; margin-left:50px}
+.main-taocan .login_box2{ float:right; }
+.main-taocan .login_box3{ float:left;line-height:30px; width:100px; margin-left:50px}
+/*套餐*/
+.taocan-main a{ font-size:14px; margin-top:10px; }
+.taocan-main .login_box1{ float:left;  margin-top:20px}
+.taocan-main .login_box2{ float:right; margin-top:20px;color:#fff; margin-right:20px; width:40px; height:25px; background-color:#0c95e6; border-radius:2px; text-align:center; line-height:25px;}
+.taocan-main .login_box3{ float:left;line-height:30px; color:#1873c8}
+/*体检咨询*/
+.physical-box{ background-image:url(images/tup.jpg); line-height:35px; margin-top:10px; border:1px solid #CCC; font-weight:bold; font-size:16px}
+.physical{ float:left; margin-left:10px}
+.physicals{ float:right; margin-right:10px}
+.physical-main{ margin-top:10px; }
+.physical-main img{ float:left; margin-left:10px; margin-top:10px}
+.physical-mains{ float:left; margin-left:20px; color:#1873c8; margin-top:10px}
+.physical-main01{margin-top:10px; border-bottom:1px dashed #CCCCCC;}
+.physical-main01 img{float:left; margin-left:10px; margin-top:10px}
+.physical-main1s{ float:left; margin-left:20px; color:#1873c8; line-height:30px; width:500px; color:#999}
+/*第二页*/
+/*左内容*/
+.main-jd span{ float:left; color:#CCC}
+.main-left{ width:780px; float:left ;margin-top:10px}
+.main01{ line-height:40px; font-family:'微软雅黑'; font-weight:bold; position:relative; border-bottom:solid 1px #e3e3e3; box-sizing:border-box; background-image:url(images/beijing.jpg);margin-top:20px;}
+.main01 img{position:absolute; top:0; left:0;}  
+.main01-box span{ font-size:18px; color:#3c3c3c;}
+.main01-tijian span{ margin-top:10px}
+
+
+/*套餐详情*/
+.main-tcxq a{ float:left; margin-top:20px; width:100px; height:30px; background-color:#f3f3f3; border:1px solid #eaeaea; text-align:center; line-height:30px}
+.main-tcxqs-box{ border:1px solid #eaeaea;}
+.main-tcxqs-box span{ margin-left:20px; margin-top:20px}
+.main-tcxqs{background-image:url(img/tijian.jpg); height:1px; margin-bottom:10px; background-repeat:no-repeat; margin-left:auto; margin-left:22px; margin-top:5px}
+.tables{ text-align:center;}
+.jianchaq span{ font-size:16px; margin-left:30px; margin-top:10px; color:#3c3c3c; margin-right:5px; line-height:30px}
+.jcq-box{border:1px solid #eaeaea;}
+/*第三页*/
+/*左内容*/
+.main-left{ width:740px; float:left}
+/*体检卡*/
+.main-tjk{ margin-top:20px}
+.main-line span{ display:inline}
+
+.main-zf{ background-color:#d8d8d8; margin-top:20px; line-height:40px; height:40px; font-size:16px; font-weight:bold}
+.main-tk{ width:650px; height:130px; background-color:#d5ffd8}
+.main-tk input{ margin-top:20px; margin-left:10px}
+.blank10{ height:10px; font-size:1px; clear:both;overflow:hidden;}
+.TbLable{font-size: 18px;height: 40px;text-align: right;}
+.px{padding:2px 4px;line-height:22px; height:22px;}
+.px{border-left: 1px solid #707070;
+    border-right: 1px solid #CECECE;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #CECECE;
+    background: #FFF url('/images/px.png') repeat-x 0 0;
+    height: 20px; width:200px
+}
+
+.main-tjk div{ margin-left:20px;line-height:20px; margin-top:5px}
+.main-liji{ height:30px; width:100px; line-height:30px; text-align:center;background-color:#35a907; margin-left:auto; margin-right:auto; margin-top:20px; color:#FFF; border-radius:2px }
+/*右内容*/
+.main-right{ float:left; width:240px; margin-left:auto; margin-right:auto;}
+.customer-box{ width:220px; height:240px; border:1px solid #999; margin-left:10px}
+.customer-box .customer{ margin-left:20px; margin-top:10px; font-size:14px; color:#000; font-weight:bold}
+.percent-box{border-bottom:1px solid #999; width:160px;margin-left:auto; margin-right:auto}
+.main-yy{width:160px;margin-left:auto; margin-right:auto; margin-top:10px; font-size:12px; line-height:30px; height:30px}
+.percent-box .percent{ float:left; margin-left:2px; font-size:28px; margin-top:10px; font-weight:bold; color:#1873c8}
+.percent-box .percents{ float:left; margin-left:2px; margin-top:10px; font-size:20px; color:#1873c8}
+.subscribe{ margin-top:10px; margin-left:15px}
+/*体检流程*/
+.flow-box{ width:220px;margin-left:10px; margin-top:20px}
+.flows-box{ background-color:#fff; border:5px solid #efefef; }
+.flow{ background-color:#efefef; line-height:50px;text-align:center; font-size:16px; color:#3c3c3c}
+.flow01{float:left; margin-left:5px}
+.flows01{text-align:center; line-height:20px; margin-top:10px; color:#e64e00; font-size:14px; width:155px}
+.flows02{line-height:20px; margin-bottom:10px; margin-top:5px; width:155px}
+.first{ float:left; margin-top:15px; font-size:60px; line-height:30px; font-weight:bold; font-style:oblique; color:#efefef; margin-left:10px}
+/*体检报告*/
+.report-box{ border:1px solid #CCC; margin-left:10px; margin-top:20px}
+.report{ background-image:url(images/tup.jpg); text-align:center; border:1px solid #efefef; line-height:50px; width:220px}
+.IDnumber{ margin-top:20px; margin-left:20px}
+.button{ width:80px; height:30px; border-radius:3px; background-color:#f47408; color:#FFF; margin-top:20px; margin-left:50px }
+.hint{ margin-top:20px;line-height:20px; margin-left:10px; margin-right:2px; margin-bottom:10px; color:#e64b00 }
+/*体检综述*/
+.summarize-box{ margin-top:20px; margin-left:10px;border:1px solid #CCC;}
+.summarize{ background-image:url(images/tup.jpg); float:left; margin-left:10px;line-height:40px}
+.more{ float:right; line-height:40px; margin-right:10px}
+.main-wd{ line-height:25px; height:25px}
+/*第四页*/
+
+.main-yydd{ margin-top:20px;}
+.main-yygg{ float:left;margin-left:20px; width:80px;}
+.f14{ font-size:14px;}
+.main-yyding{float:left;margin-left:20px;}
+h5{font-size:20px; font-weight:bold; padding:0; margin:0}
+.main-ddh{ margin-top:10px}
+.main-ddh span{ float:left; margin-left:5px;}
+.cjjl{ float:left; clear:both; padding:8px 0 15px 10px; width:600px; background:#f3f3f3; border:1px #dfdfdf solid; margin-top:20px}
+.cjjl .title{ float:left; width:100px; padding-bottom:5px;}
+.cjjl .cltable{ float:left; 601px}
+.cjjl .cltable .td1{ height:28px; font-weight:bold; text-align:center;}
+.cjjl .cltable .td2{ height:28px; color:#7F7F7F; text-align:center;}
+.cjjl .cltable .td3{ height:28px; color:#7F7F7F; text-align:center;}
+.cjjl .cltable .td3 a{ color:#7F7F7F;}
+.cjjl .cltable .td3 a:hover{ color:#E64B00;}
+.cjjl .cltable .td4{ height:28px; color:#7F7F7F; text-align:center;}
+.cjjl .cltable .td4 a{ color:#7F7F7F;}
+.cjjl .cltable .td5{ height:28px; color:#E64B00; text-align:center;}
+.tjstateok .weixin{ float:left; clear:both; width:196px; height:249px;background:url(/images/tijian/weixin2.gif);}
+.fontbold{font-weight:bold; font-size:20px; line-height:40px}

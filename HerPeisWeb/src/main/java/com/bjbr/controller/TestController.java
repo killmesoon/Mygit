@@ -2,20 +2,26 @@ package com.bjbr.controller;
 
 
 
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
-
-
+import com.bjbr.pojo.ExamSuitCustom;
 import com.bjbr.service.ItemService;
+
+
+
+
 
 @Controller
 public class TestController {
-	
 	@Autowired
-	
 	private ItemService itemService;
+
 
 	@RequestMapping("/")
 	public String testSpringmvc(){
@@ -30,7 +36,7 @@ public class TestController {
 	public String testLogin(){
 		
 		
-		return "login";
+		return "precall";
 	}
 	
 	//套餐界面
@@ -46,19 +52,19 @@ public class TestController {
 //	}
 	
 	
-//	@RequestMapping("/testlist")
-//	public ModelAndView testItemList() throws Exception{
-//		ModelAndView mv = new ModelAndView();
-//		List<ExamSuitCustom> itemlist = itemService.queryItemList();
-//		mv.addObject("itemlist", itemlist);
-//		for(ExamSuitCustom ex:itemlist){
-//			
-//			System.out.println(ex.getID_ExamSuite()+ex.getExamSuite_Name()+ex.getPrice()+ex.isSex());
-//		}
-//		
-//		
-//		mv.setViewName("precall");
-//		return mv;
-//	}
+	@RequestMapping("/testlist")
+	public ModelAndView testItemList() throws Exception{
+		ModelAndView mv = new ModelAndView();
+		List<ExamSuitCustom> itemlist = itemService.queryItemList();
+		mv.addObject("itemlist", itemlist);
+		for(ExamSuitCustom ex:itemlist){
+			
+			System.out.println(ex.getID_ExamSuite()+ex.getExamSuite_Name()+ex.getPrice()+ex.isSex());
+		}
+		
+		
+		mv.setViewName("precall");
+		return mv;
+	}
 	
 }

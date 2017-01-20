@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,17 +21,15 @@ public class ItemController {
    private ItemService itemService;
 	
 	//读取项目列表
-	@RequestMapping("/itemlist")
+	@RequestMapping("/item")
 	public ModelAndView queryBasExamSuit()throws Exception{
 		ModelAndView mv = new ModelAndView();
+		List<ExamSuitCustom> list = itemService.queryItemList();
 		
-		List<ExamSuit> itemlist = itemService.queryItemList();
-		mv.addObject("itemlist", itemlist);
-		
-		
+		mv.addObject("list", list);
 		mv.setViewName("precall");
+		return  mv;
 		
-		return mv;
 	}
 	
 	//单个项目详情的需求

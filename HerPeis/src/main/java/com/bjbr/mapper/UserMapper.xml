@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.bjbr.mapper.UserMapper" >
+    
+    <!-- 查询套餐列表的rm -->
+    <resultMap type="com.bjbr.pojo.ExamSuitCustom" id="showItemListRM">
+    <id property="examSuitId"  column="ID_ExamSuite"/>
+    <result property="examSuitName" column="ExamSuite_Name" />
+    <result property="price" column="Price" javaType="double"/>
+    <result property="sex" column="F_Male" javaType="boolean"/>
+    
+    </resultMap>
+    
+    <!-- 判断用户名密码是否正确 -->
+    <select id="checkUserLogin" parameterType="com.bjbr.pojo.UserCustom" resultType="com.bjbr.pojo.UserCustom">
+    select * from PeisPatientLoginForWeb where user_id=#{user_id} and password=#{password} 
+    </select>
+    
+    <!-- 判断用户是否存在 -->
+    <select id="checkUserIsExist" parameterType="com.bjbr.pojo.UserCustom" resultType="com.bjbr.pojo.UserCustom">
+    select * from PeisPatientLoginForWeb where user_id=#{user_id}
+    </select>
+    
+    <insert id="addUserCustom" parameterType="com.bjbr.pojo.UserCustom">
+    insert into PeisPatientLoginForWeb (user_id,password) values(#{user_id},#{password})
+    </insert>
+    
+    
+    <select id="showItemList" resultMap="showItemListRM">
+    select ID_ExamSuite,ExamSuite_Name,Price,F_Male from BasExamSuite 
+    </select>
+    
+    </mapper>
