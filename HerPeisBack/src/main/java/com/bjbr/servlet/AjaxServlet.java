@@ -96,7 +96,7 @@ public class AjaxServlet extends HttpServlet {
 	}
 	
 	
-	
+	//String 数组转 Int数组
 	public int[] StringToInt(String[] arrs){
 	    int[] ints = new int[arrs.length];
 	    for(int i=0;i<arrs.length;i++){
